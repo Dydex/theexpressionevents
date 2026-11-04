@@ -3,19 +3,19 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative w-full h-[calc(100vh-70px)] min-h-[640px] max-h-[1100px] overflow-hidden flex items-center justify-center">
-      {/* Background Image — full resolution 4906×3270 */}
+      {/* Background Image — Full High-Res Celebration Photo */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-full.jpg"
-          alt="The Expression Events - Grand Luxury Event Setting"
+          src="/images/hero-celebration-full.jpg"
+          alt="The Expression Events - Grand Luxury Celebration"
           fill
           priority
           quality={90}
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/15" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
+        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/35" />
       </div>
 
       {/* Logo centered */}

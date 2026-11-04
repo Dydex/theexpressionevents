@@ -3,6 +3,11 @@ import Hero from "@/components/Hero";
 import EditorialStatement from "@/components/EditorialStatement";
 import PhotoTriptych from "@/components/PhotoTriptych";
 import PhilosophySection from "@/components/PhilosophySection";
+import ClientTestimonialSection from "@/components/ClientTestimonialSection";
+import TeamOfferingsSection from "@/components/TeamOfferingsSection";
+import PortfolioTriptych from "@/components/PortfolioTriptych";
+import ProcessSection from "@/components/ProcessSection";
+import ConnectSection from "@/components/ConnectSection";
 import Image from "next/image";
 import Link from "next/link";
 import { EventPillar } from "@/interfaces";
@@ -112,7 +117,7 @@ export default function Home() {
             <div className="w-16 h-[2px] bg-[#e65b6c] mx-auto mb-6 shadow-md" />
 
             <p className="font-sans text-base sm:text-lg text-white leading-relaxed max-w-2xl mx-auto font-light drop-shadow-[0_2px_14px_rgba(0,0,0,0.95)]">
-              At <strong className="font-medium text-white">The Expression Events</strong>, we specialize in full-service event planning, seamless management, and bespoke decoration. Whether you are hosting a high-profile corporate gala, a dream wedding, or an intimate private soirée, we infuse every corner with artistry, elegance, and emotional resonance.
+              At <strong className="font-medium text-white">The Expression Events</strong>, we specialize in full-service event planning, seamless management, and bespoke decoration. Whether you are hosting a high-profile corporate gala, a landmark celebration, or an intimate private soirée, we infuse every corner with artistry, elegance, and emotional resonance.
             </p>
           </div>
         </section>
@@ -120,8 +125,23 @@ export default function Home() {
         {/* Photo Triptych — 3 real event photos on coral background */}
         <PhotoTriptych />
 
-        {/* Philosophy Statement + Cards */}
+        {/* Philosophy Statement + Cards (Make it Joyful, Personal, Flawless) */}
         <PhilosophySection />
+
+        {/* Client Testimonial Spotlight — image + quote split section */}
+        <ClientTestimonialSection />
+
+        {/* Team & Offerings Spotlight Section */}
+        <TeamOfferingsSection />
+
+        {/* Full-Bleed 3-Column Portfolio Strip */}
+        <PortfolioTriptych />
+
+        {/* Process Statement + Cards (Collaborate, Innovate, Orchestrate) */}
+        <ProcessSection />
+
+        {/* Image Gallery Strip + Quick Links / Crest / Social CTA */}
+        <ConnectSection />
 
         {/* Next Section: Core Capabilities (01, 02, 03, 04) */}
         <section id="offerings" className="bg-[#fbf4f6] py-24 sm:py-32 px-6 sm:px-12 border-y border-[#f0d8df]">
@@ -274,7 +294,7 @@ export default function Home() {
               </label>
               <select className="w-full bg-[#fbf4f6] border border-[#ecd2d8] px-4 py-3 text-sm focus:outline-none focus:border-[#d65063] transition-colors">
                 <option>Corporate Event</option>
-                <option>Social Celebration / Wedding</option>
+                <option>Social Celebration / Private Event</option>
                 <option>Intimate Gathering / Soirée</option>
                 <option>Full Event Decoration &amp; Styling</option>
                 <option>Mood Board Creation &amp; Aesthetic Concept</option>

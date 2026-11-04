@@ -59,7 +59,7 @@ export interface PortfolioItem {
 // Contact / Inquiry Form Data
 export type EventCategory =
   | "Corporate Event"
-  | "Social Celebration / Wedding"
+  | "Social Celebration / Private Event"
   | "Intimate Gathering / Soirée"
   | "Full Event Decoration & Styling"
   | "Mood Board Creation & Aesthetic Concept";

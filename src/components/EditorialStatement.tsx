@@ -1,10 +1,16 @@
 export default function EditorialStatement() {
   return (
-    <section className="bg-[#c84f60] text-white py-20 sm:py-28 lg:py-32 px-8 sm:px-16 lg:px-24 overflow-hidden">
+    <section
+      className="py-20 sm:py-28 lg:py-32 px-8 sm:px-16 lg:px-24 overflow-hidden"
+      style={{
+        background:
+          "repeating-linear-gradient(90deg, #f9f0f2 0px, #f9f0f2 28px, #f3e4e8 28px, #f3e4e8 30px)",
+      }}
+    >
       <div className="max-w-3xl mx-auto flex flex-col items-center text-center">
 
         {/* Ornate Badge / Crest — centered */}
-        <div className="mb-7 sm:mb-9 text-white/90 inline-block">
+        <div className="mb-7 sm:mb-9 text-[#c84f60] inline-block">
           <svg
             className="w-[88px] h-[104px] sm:w-[104px] sm:h-[124px]"
             viewBox="0 0 100 120"
@@ -48,12 +54,12 @@ export default function EditorialStatement() {
         </div>
 
         {/* Tracked pre-title */}
-        <span className="block text-[10px] sm:text-[11px] font-sans font-medium uppercase tracking-[0.30em] text-white/75 mb-7 sm:mb-9">
-          The Kind of Party Your Guests Talk About for Decades
+        <span className="block text-[10px] sm:text-[11px] font-sans font-medium uppercase tracking-[0.30em] text-[#d65063] mb-7 sm:mb-9">
+          The Kind of Event Your Guests Talk About for Decades
         </span>
 
         {/* Main Editorial Headline — centered */}
-        <h2 className="font-serif text-3xl sm:text-[44px] lg:text-[52px] font-normal leading-[1.22] text-white tracking-wide mb-7 sm:mb-9">
+        <h2 className="font-serif text-3xl sm:text-[44px] lg:text-[52px] font-normal leading-[1.22] text-[#221a1d] tracking-wide mb-7 sm:mb-9">
           Escape{" "}
           <em className="italic font-normal">the overwhelm</em>{" "}
           of planning to-dos and trade in the dime-a-dozen details for a{" "}
@@ -61,11 +67,11 @@ export default function EditorialStatement() {
         </h2>
 
         {/* Supporting paragraph — centered, slightly muted */}
-        <p className="font-serif text-base sm:text-lg lg:text-[19px] text-white/80 leading-relaxed font-light max-w-xl">
+        <p className="font-serif text-base sm:text-lg lg:text-[19px] text-[#6b5860] leading-relaxed font-light max-w-xl">
           Let us help you plan a second-to-none celebration to{" "}
-          <em className="italic text-white/95">kick off your future</em>{" "}
+          <em className="italic text-[#3d2830]">kick off your future</em>{" "}
           with the{" "}
-          <em className="italic text-white/95">event of a lifetime</em>{" "}
+          <em className="italic text-[#3d2830]">event of a lifetime</em>{" "}
           … without losing your wits in the process.
         </p>
 

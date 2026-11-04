@@ -19,7 +19,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "The Expression Events | Bespoke Event Design & Production",
-  description: "Curating exquisite luxury celebrations, destination weddings, and bespoke events.",
+  description: "Curating exquisite luxury celebrations, destination gatherings, and bespoke events.",
 };
 
 export default function RootLayout({
