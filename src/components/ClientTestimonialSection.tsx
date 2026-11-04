@@ -65,9 +65,6 @@ export default function ClientTestimonialSection() {
   return (
     <section className="bg-[#2a161e] py-20 sm:py-28">
       <div className="max-w-6xl mx-auto px-6 sm:px-12 lg:px-16 mb-12 sm:mb-16">
-        <span className="block text-[10px] sm:text-[11px] font-sans font-medium uppercase tracking-[0.30em] text-[#e9a9b4] mb-4">
-          Lorem Ipsum
-        </span>
         <h2 className="font-serif text-3xl sm:text-4xl lg:text-[44px] font-normal leading-[1.2] text-white tracking-wide">
           Our Clients Say the Nicest Things
         </h2>

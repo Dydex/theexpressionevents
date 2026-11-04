@@ -9,7 +9,7 @@ export default function Navbar({ className = "" }: NavbarProps) {
 
   const leftNavItems: NavItem[] = [
     { label: "HOME", href: "/" },
-    { label: "ABOUT", href: "#about" },
+    { label: "ABOUT", href: "/about" },
     { label: "OFFERINGS", href: "#offerings" },
   ];
 
@@ -22,14 +22,15 @@ export default function Navbar({ className = "" }: NavbarProps) {
     <header className={`w-full bg-[#c84f60] text-[#fff5f6] z-50 sticky top-0 transition-colors shadow-sm ${className}`}>
       <div className="max-w-[1600px] mx-auto px-6 sm:px-10 h-16 md:h-[70px] flex items-center justify-between">
         {/* Left Links - Desktop */}
-        <nav className="hidden lg:flex items-center space-x-9 xl:space-x-12 flex-1">
+        <nav className="hidden lg:flex items-center h-full space-x-9 xl:space-x-12 flex-1">
           {leftNavItems.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="text-[11px] xl:text-[12px] font-medium tracking-[0.22em] text-[#ffe6ea] hover:text-white transition-opacity duration-200"
+              className="group relative h-full flex items-center text-[11px] xl:text-[12px] font-medium tracking-[0.22em] text-[#ffe6ea] hover:text-white transition-colors duration-200"
             >
               {item.label}
+              <span className="pointer-events-none absolute bottom-0 left-0 right-0 h-[2px] bg-white origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
             </Link>
           ))}
         </nav>
@@ -47,14 +48,15 @@ export default function Navbar({ className = "" }: NavbarProps) {
         </div>
 
         {/* Right Links - Desktop */}
-        <nav className="hidden lg:flex items-center justify-end space-x-9 xl:space-x-12 flex-1">
+        <nav className="hidden lg:flex items-center h-full justify-end space-x-9 xl:space-x-12 flex-1">
           {rightNavItems.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="text-[11px] xl:text-[12px] font-medium tracking-[0.22em] text-[#ffe6ea] hover:text-white transition-opacity duration-200"
+              className="group relative h-full flex items-center text-[11px] xl:text-[12px] font-medium tracking-[0.22em] text-[#ffe6ea] hover:text-white transition-colors duration-200"
             >
               {item.label}
+              <span className="pointer-events-none absolute bottom-0 left-0 right-0 h-[2px] bg-white origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
             </Link>
           ))}
         </nav>
